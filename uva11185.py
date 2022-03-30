@@ -1,4 +1,4 @@
-v1.0
+v1.1
 while True:
     try:
         x = int(input())
@@ -7,8 +7,8 @@ while True:
     a = ""
     if x < 0:
         break
-    elif x == 0:
-        print(x)
+    elif x == 0: 
+        print(x,end="") # 這裡加上 ,end=""  不然輸出0時會多一行空白 
     else: # x > 0 
         while x > 0: 
             a = str(x%3) + a
